@@ -179,7 +179,11 @@
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QeL-sR-r0m">
                                 <items>
-                                    <barButtonItem title="Item" id="AjR-if-L33"/>
+                                    <barButtonItem title="OK" id="AjR-if-L33">
+                                        <connections>
+                                            <action selector="okButton:" destination="v5p-Zz-GPj" id="EVK-WB-IvY"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>

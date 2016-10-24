@@ -33,10 +33,16 @@ class HistoryViewController: UIViewController, UITableViewDataSource, UITableVie
         }else{
             cell.textLabel?.text = "Lose"
         }
+        cell.detailTextLabel?.text = "\(mugUpHistory.p1) vs \(mugUpHistory.p2)"
         return cell
     }
     
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
     }
+    @IBAction func okButton(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
 }
