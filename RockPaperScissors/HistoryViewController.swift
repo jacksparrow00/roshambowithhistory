@@ -10,13 +10,7 @@ import UIKit
 
 class HistoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var historyMatch = [RPSMatch]()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    var historyMatch:[RPSMatch]!
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return historyMatch.count
